@@ -65,21 +65,31 @@ enum StoryboardScene {
   enum LaunchScreen: StoryboardSceneType {
     static let storyboardName = "LaunchScreen"
   }
-  enum UserDetailViewController: StoryboardSceneType {
-    static let storyboardName = "UserDetailViewController"
+  enum SearchResultViewController: StoryboardSceneType {
+    static let storyboardName = "SearchResultViewController"
 
-    static func initialViewController() -> CoordinatorSample.UserDetailViewController {
-      guard let vc = storyboard().instantiateInitialViewController() as? CoordinatorSample.UserDetailViewController else {
+    static func initialViewController() -> CoordinatorSample.SearchResultViewController {
+      guard let vc = storyboard().instantiateInitialViewController() as? CoordinatorSample.SearchResultViewController else {
         fatalError("Failed to instantiate initialViewController for \(self.storyboardName)")
       }
       return vc
     }
   }
-  enum UsersTableViewController: StoryboardSceneType {
-    static let storyboardName = "UsersTableViewController"
+  enum SearchViewController: StoryboardSceneType {
+    static let storyboardName = "SearchViewController"
 
-    static func initialViewController() -> CoordinatorSample.UsersTableViewController {
-      guard let vc = storyboard().instantiateInitialViewController() as? CoordinatorSample.UsersTableViewController else {
+    static func initialViewController() -> CoordinatorSample.SearchViewController {
+      guard let vc = storyboard().instantiateInitialViewController() as? CoordinatorSample.SearchViewController else {
+        fatalError("Failed to instantiate initialViewController for \(self.storyboardName)")
+      }
+      return vc
+    }
+  }
+  enum UserDetailViewController: StoryboardSceneType {
+    static let storyboardName = "UserDetailViewController"
+
+    static func initialViewController() -> CoordinatorSample.UserDetailViewController {
+      guard let vc = storyboard().instantiateInitialViewController() as? CoordinatorSample.UserDetailViewController else {
         fatalError("Failed to instantiate initialViewController for \(self.storyboardName)")
       }
       return vc

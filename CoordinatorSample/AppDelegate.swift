@@ -23,13 +23,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let feedCoordinator = FeedCoordinator(
             presenter: UINavigationController()
         )
-        let usersCoordinator = UsersCoordinator(
+        let searchCoordinator = SearchCoordinator(
             presenter: UINavigationController()
         )
 
         let mainTabCoordinator = MainTabCoordinator(
             presenter: UITabBarController(),
-            childCoordinators: [feedCoordinator, usersCoordinator]
+            childCoordinators: [feedCoordinator, searchCoordinator]
         )
 
         appCoordinator = AppCoordinator(

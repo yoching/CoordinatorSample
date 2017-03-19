@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="LIG-F0-4xG">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search-->
+        <scene sceneID="hFy-1d-AQw">
+            <objects>
+                <viewController title="Search" id="LIG-F0-4xG" customClass="SearchViewController" customModule="CoordinatorSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6TZ-Hk-gE9"/>
+                        <viewControllerLayoutGuide type="bottom" id="fKE-Nt-oia"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GhT-1a-VxA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ObK-qj-tbC">
+                                <rect key="frame" x="30" y="318.5" width="315" height="30"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qBK-yf-Nrl">
+                                        <rect key="frame" x="0.0" y="0.0" width="255" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8vF-Tr-NqQ">
+                                        <rect key="frame" x="265" y="0.0" width="50" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="RuA-ed-tI1"/>
+                                        </constraints>
+                                        <state key="normal" title="Search"/>
+                                        <connections>
+                                            <action selector="searchButtonTapped:" destination="LIG-F0-4xG" eventType="touchUpInside" id="ucy-N7-xoK"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="R51-uL-gKF"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="( dummy implementation )" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AW8-95-q9f">
+                                <rect key="frame" x="87" y="388" width="200" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ObK-qj-tbC" firstAttribute="leading" secondItem="GhT-1a-VxA" secondAttribute="leading" constant="30" id="4RV-X8-il3"/>
+                            <constraint firstAttribute="trailing" secondItem="ObK-qj-tbC" secondAttribute="trailing" constant="30" id="8Fs-4t-4U4"/>
+                            <constraint firstItem="ObK-qj-tbC" firstAttribute="centerY" secondItem="GhT-1a-VxA" secondAttribute="centerY" id="Kjv-ji-D2E"/>
+                            <constraint firstItem="AW8-95-q9f" firstAttribute="top" secondItem="ObK-qj-tbC" secondAttribute="bottom" constant="40" id="odz-HE-ldg"/>
+                            <constraint firstItem="AW8-95-q9f" firstAttribute="centerX" secondItem="GhT-1a-VxA" secondAttribute="centerX" id="v5R-xi-RE6"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mHp-ij-59T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="110" y="113"/>
+        </scene>
+    </scenes>
+</document>

@@ -36,6 +36,10 @@ final class ItemRepository {
         return itemDetails.map { $0.item }
     }
 
+    var itemsForSearchResult: [Item] {
+        return itemDetails.map { $0.item }.filter { $0.itemId < 3 }
+    }
+
     func getDetail(of item: Item) -> ItemDetail? {
         return itemDetails.filter { $0.itemId == item.itemId }.first
     }
