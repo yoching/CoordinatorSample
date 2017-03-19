@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item Detail View Controller-->
+        <!--Item Detail-->
         <scene sceneID="qZF-Fn-d8P">
             <objects>
-                <viewController id="BpY-fO-kiU" customClass="ItemDetailViewController" customModule="CoordinatorSample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Item Detail" id="BpY-fO-kiU" customClass="ItemDetailViewController" customModule="CoordinatorSample" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="N2p-bs-TdK"/>
                         <viewControllerLayoutGuide type="bottom" id="cAH-F1-wTL"/>

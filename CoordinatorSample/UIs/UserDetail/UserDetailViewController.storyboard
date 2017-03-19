@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--User Detail View Controller-->
+        <!--User Detail-->
         <scene sceneID="Tbw-ez-orh">
             <objects>
-                <viewController id="RSN-D4-cAP" customClass="UserDetailViewController" customModule="CoordinatorSample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="User Detail" id="RSN-D4-cAP" customClass="UserDetailViewController" customModule="CoordinatorSample" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ilt-C4-dLy"/>
                         <viewControllerLayoutGuide type="bottom" id="svd-e8-CVo"/>
@@ -41,11 +41,11 @@
                                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LPp-cd-6M4" id="Y4a-lI-h6m">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="42R-Lh-s9U">
-                                                            <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
+                                                            <rect key="frame" x="15" y="0.0" width="345" height="43"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>

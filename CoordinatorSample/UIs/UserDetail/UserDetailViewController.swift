@@ -23,7 +23,6 @@ final class UserDetailViewController: UIViewController {
         guard let user = user else {
             return
         }
-        self.title = user.name
         userDetail = UserRepository.shared.getDetail(of: user)
         userNameLabel.text = userDetail?.name
         itemTableView.reloadData()

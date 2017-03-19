@@ -30,7 +30,6 @@ final class ItemDetailViewController: UIViewController {
             return
         }
         itemDetail = ItemRepository.shared.getDetail(of: item)
-        self.title = itemDetail?.name
         itemNameLabel.text = itemDetail?.name
         userNameButton.setTitle(itemDetail?.user.name, for: .normal)
     }
