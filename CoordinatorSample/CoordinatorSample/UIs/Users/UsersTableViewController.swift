@@ -12,7 +12,7 @@ class UsersTableViewController: UITableViewController {
 
     var userSelected: ((User) -> Void)?
 
-    private let users = User.users
+    private let users = UsersRepository.shared.usersForUsers
 
     // MARK: - Table view data source
 
