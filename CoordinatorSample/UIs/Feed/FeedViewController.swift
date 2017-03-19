@@ -1,5 +1,5 @@
 //
-//  ItemsTableViewController.swift
+//  FeedViewController.swift
 //  CoordinatorSample
 //
 //  Created by Yoshikuni Kato on 3/19/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class ItemsTableViewController: UITableViewController {
+final class FeedViewController: UITableViewController {
 
     var itemSelected: ((Item) -> Void)?
 

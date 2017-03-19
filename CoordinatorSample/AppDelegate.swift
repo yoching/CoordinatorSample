@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         window = UIWindow(frame: UIScreen.main.bounds)
 
-        let itemsCoordinator = ItemsCoordinator(
+        let feedCoordinator = FeedCoordinator(
             presenter: UINavigationController()
         )
         let usersCoordinator = UsersCoordinator(
@@ -29,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         let mainTabCoordinator = MainTabCoordinator(
             presenter: UITabBarController(),
-            childCoordinators: [itemsCoordinator, usersCoordinator]
+            childCoordinators: [feedCoordinator, usersCoordinator]
         )
 
         appCoordinator = AppCoordinator(

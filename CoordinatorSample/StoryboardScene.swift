@@ -42,21 +42,21 @@ extension UIViewController {
 }
 
 enum StoryboardScene {
-  enum ItemDetailViewController: StoryboardSceneType {
-    static let storyboardName = "ItemDetailViewController"
+  enum FeedViewController: StoryboardSceneType {
+    static let storyboardName = "FeedViewController"
 
-    static func initialViewController() -> CoordinatorSample.ItemDetailViewController {
-      guard let vc = storyboard().instantiateInitialViewController() as? CoordinatorSample.ItemDetailViewController else {
+    static func initialViewController() -> CoordinatorSample.FeedViewController {
+      guard let vc = storyboard().instantiateInitialViewController() as? CoordinatorSample.FeedViewController else {
         fatalError("Failed to instantiate initialViewController for \(self.storyboardName)")
       }
       return vc
     }
   }
-  enum ItemsTableViewController: StoryboardSceneType {
-    static let storyboardName = "ItemsTableViewController"
+  enum ItemDetailViewController: StoryboardSceneType {
+    static let storyboardName = "ItemDetailViewController"
 
-    static func initialViewController() -> CoordinatorSample.ItemsTableViewController {
-      guard let vc = storyboard().instantiateInitialViewController() as? CoordinatorSample.ItemsTableViewController else {
+    static func initialViewController() -> CoordinatorSample.ItemDetailViewController {
+      guard let vc = storyboard().instantiateInitialViewController() as? CoordinatorSample.ItemDetailViewController else {
         fatalError("Failed to instantiate initialViewController for \(self.storyboardName)")
       }
       return vc

@@ -19,9 +19,9 @@
 		E30590BD1E7D87B900304671 /* MainTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30590BC1E7D87B900304671 /* MainTabCoordinator.swift */; };
 		E349936F1E7D8C6E0085688A /* UsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E349936E1E7D8C6E0085688A /* UsersTableViewController.swift */; };
 		E34993711E7D8C820085688A /* UsersTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E34993701E7D8C820085688A /* UsersTableViewController.storyboard */; };
-		E34993731E7D8D1D0085688A /* ItemsTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E34993721E7D8D1D0085688A /* ItemsTableViewController.storyboard */; };
-		E34993771E7D8D400085688A /* ItemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34993761E7D8D400085688A /* ItemsTableViewController.swift */; };
-		E34993791E7D8DA30085688A /* ItemsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34993781E7D8DA30085688A /* ItemsCoordinator.swift */; };
+		E34993731E7D8D1D0085688A /* FeedViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E34993721E7D8D1D0085688A /* FeedViewController.storyboard */; };
+		E34993771E7D8D400085688A /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34993761E7D8D400085688A /* FeedViewController.swift */; };
+		E34993791E7D8DA30085688A /* FeedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34993781E7D8DA30085688A /* FeedCoordinator.swift */; };
 		E349937B1E7D8DD20085688A /* UsersCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E349937A1E7D8DD20085688A /* UsersCoordinator.swift */; };
 		E349937D1E7D8E790085688A /* StoryboardScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E349937C1E7D8E790085688A /* StoryboardScene.swift */; };
 		E396D53A1E7E499C00CE8D50 /* ItemDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E396D5391E7E499C00CE8D50 /* ItemDetailViewController.storyboard */; };
@@ -73,9 +73,9 @@
 		E30590BC1E7D87B900304671 /* MainTabCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabCoordinator.swift; sourceTree = "<group>"; };
 		E349936E1E7D8C6E0085688A /* UsersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersTableViewController.swift; sourceTree = "<group>"; };
 		E34993701E7D8C820085688A /* UsersTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UsersTableViewController.storyboard; sourceTree = "<group>"; };
-		E34993721E7D8D1D0085688A /* ItemsTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ItemsTableViewController.storyboard; sourceTree = "<group>"; };
-		E34993761E7D8D400085688A /* ItemsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsTableViewController.swift; sourceTree = "<group>"; };
-		E34993781E7D8DA30085688A /* ItemsCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsCoordinator.swift; sourceTree = "<group>"; };
+		E34993721E7D8D1D0085688A /* FeedViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FeedViewController.storyboard; sourceTree = "<group>"; };
+		E34993761E7D8D400085688A /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		E34993781E7D8DA30085688A /* FeedCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedCoordinator.swift; sourceTree = "<group>"; };
 		E349937A1E7D8DD20085688A /* UsersCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersCoordinator.swift; sourceTree = "<group>"; };
 		E349937C1E7D8E790085688A /* StoryboardScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardScene.swift; sourceTree = "<group>"; };
 		E396D5391E7E499C00CE8D50 /* ItemDetailViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ItemDetailViewController.storyboard; sourceTree = "<group>"; };
@@ -176,7 +176,7 @@
 				E396D5571E7E6C3400CE8D50 /* CommonTransitions */,
 				E30590BA1E7D879200304671 /* AppCoordinator.swift */,
 				E30590BC1E7D87B900304671 /* MainTabCoordinator.swift */,
-				E34993781E7D8DA30085688A /* ItemsCoordinator.swift */,
+				E34993781E7D8DA30085688A /* FeedCoordinator.swift */,
 				E349937A1E7D8DD20085688A /* UsersCoordinator.swift */,
 			);
 			path = Coordinators;
@@ -204,7 +204,7 @@
 		E34993671E7D8B620085688A /* UIs */ = {
 			isa = PBXGroup;
 			children = (
-				E349936B1E7D8C380085688A /* Items */,
+				E349936B1E7D8C380085688A /* Feed */,
 				E396D5381E7E491500CE8D50 /* ItemDetail */,
 				E349936A1E7D8BE70085688A /* Users */,
 				E396D53D1E7E51D900CE8D50 /* UserDetail */,
@@ -221,13 +221,13 @@
 			path = Users;
 			sourceTree = "<group>";
 		};
-		E349936B1E7D8C380085688A /* Items */ = {
+		E349936B1E7D8C380085688A /* Feed */ = {
 			isa = PBXGroup;
 			children = (
-				E34993721E7D8D1D0085688A /* ItemsTableViewController.storyboard */,
-				E34993761E7D8D400085688A /* ItemsTableViewController.swift */,
+				E34993721E7D8D1D0085688A /* FeedViewController.storyboard */,
+				E34993761E7D8D400085688A /* FeedViewController.swift */,
 			);
-			path = Items;
+			path = Feed;
 			sourceTree = "<group>";
 		};
 		E396D5381E7E491500CE8D50 /* ItemDetail */ = {
@@ -389,7 +389,7 @@
 				E305908C1E7D192D00304671 /* LaunchScreen.storyboard in Resources */,
 				E30590891E7D192D00304671 /* Assets.xcassets in Resources */,
 				E34993711E7D8C820085688A /* UsersTableViewController.storyboard in Resources */,
-				E34993731E7D8D1D0085688A /* ItemsTableViewController.storyboard in Resources */,
+				E34993731E7D8D1D0085688A /* FeedViewController.storyboard in Resources */,
 				E396D53F1E7E520900CE8D50 /* UserDetailViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,10 +445,10 @@
 				E349937B1E7D8DD20085688A /* UsersCoordinator.swift in Sources */,
 				E396D5471E7E5D5200CE8D50 /* User.swift in Sources */,
 				E30590BB1E7D879200304671 /* AppCoordinator.swift in Sources */,
-				E34993771E7D8D400085688A /* ItemsTableViewController.swift in Sources */,
+				E34993771E7D8D400085688A /* FeedViewController.swift in Sources */,
 				E396D5591E7E6C4C00CE8D50 /* DetailsPresentable.swift in Sources */,
 				E396D5411E7E522000CE8D50 /* UserDetailViewController.swift in Sources */,
-				E34993791E7D8DA30085688A /* ItemsCoordinator.swift in Sources */,
+				E34993791E7D8DA30085688A /* FeedCoordinator.swift in Sources */,
 				E30590B81E7D875900304671 /* TabBarCoordinator.swift in Sources */,
 				E30590B41E7D871000304671 /* Coordinator.swift in Sources */,
 				E396D5561E7E6A8100CE8D50 /* UserRepository.swift in Sources */,
