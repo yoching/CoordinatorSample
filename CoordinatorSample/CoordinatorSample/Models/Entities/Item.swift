@@ -9,6 +9,6 @@
 import Foundation
 
 struct Item {
+    let itemId: Int
     let name: String
-    let userId: Int
 }

@@ -1,5 +1,5 @@
 //
-//  User.swift
+//  ItemDetail.swift
 //  CoordinatorSample
 //
 //  Created by Yoshikuni Kato on 3/19/17.
@@ -8,7 +8,8 @@
 
 import Foundation
 
-struct User {
-    let userId: Int
+struct ItemDetail {
+    let itemId: Int
     let name: String
+    let user: User
 }

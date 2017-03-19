@@ -12,7 +12,7 @@ final class ItemsTableViewController: UITableViewController {
 
     var itemSelected: ((Item) -> Void)?
 
-    private let items = ItemsRepository.shared.itemsForFeed
+    private let items = ItemRepository.shared.itemsForFeed
 
     // MARK: - Table view data source
 

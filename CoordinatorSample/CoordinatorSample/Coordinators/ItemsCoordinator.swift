@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class ItemsCoordinator: NavigationCoordinator {
+final class ItemsCoordinator: NavigationCoordinator, DetailsPresentable {
 
     let navigationController: UINavigationController
 
@@ -19,13 +19,13 @@ final class ItemsCoordinator: NavigationCoordinator {
 
     func start() {
         let itemsViewController = StoryboardScene.ItemsTableViewController.initialViewController()
-        itemsViewController.itemSelected = showDetail
+        itemsViewController.itemSelected = showItemDetail
         navigationController.pushViewController(itemsViewController, animated: false)
     }
 
-    private func showDetail(of item: Item) {
-        let detailViewController = StoryboardScene.ItemDetailViewController.initialViewController()
-        detailViewController.item = item
-        navigationController.pushViewController(detailViewController, animated: true)
-    }
+//    private func showDetail(of item: Item) {
+//        let detailViewController = StoryboardScene.ItemDetailViewController.initialViewController()
+//        detailViewController.item = item
+//        navigationController.pushViewController(detailViewController, animated: true)
+//    }
 }

@@ -25,11 +25,18 @@
                                 <rect key="frame" x="87.5" y="283.5" width="200" height="100"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;Item Name&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YCc-JG-9ga">
-                                        <rect key="frame" x="48" y="0.0" width="104.5" height="100"/>
+                                        <rect key="frame" x="48" y="0.0" width="104.5" height="50"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2me-V2-DKP">
+                                        <rect key="frame" x="52" y="50" width="96" height="50"/>
+                                        <state key="normal" title="&lt;User Name&gt;"/>
+                                        <connections>
+                                            <action selector="userNameTapped:" destination="BpY-fO-kiU" eventType="touchUpInside" id="Hdw-if-zRJ"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="9NU-TX-gQv"/>
@@ -45,6 +52,7 @@
                     </view>
                     <connections>
                         <outlet property="itemNameLabel" destination="YCc-JG-9ga" id="aHe-Pi-2Yo"/>
+                        <outlet property="userNameButton" destination="2me-V2-DKP" id="8XI-Sc-UrQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x83-sY-BwR" userLabel="First Responder" sceneMemberID="firstResponder"/>

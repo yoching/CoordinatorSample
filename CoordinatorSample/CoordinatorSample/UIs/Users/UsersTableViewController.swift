@@ -8,11 +8,11 @@
 
 import UIKit
 
-class UsersTableViewController: UITableViewController {
+final class UsersTableViewController: UITableViewController {
 
     var userSelected: ((User) -> Void)?
 
-    private let users = UsersRepository.shared.usersForUsers
+    private let users = UserRepository.shared.usersForUsers
 
     // MARK: - Table view data source
 

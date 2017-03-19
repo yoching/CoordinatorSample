@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class UsersCoordinator: NavigationCoordinator {
+final class UsersCoordinator: NavigationCoordinator, DetailsPresentable {
 
     let navigationController: UINavigationController
 
@@ -19,13 +19,7 @@ final class UsersCoordinator: NavigationCoordinator {
 
     func start() {
         let usersViewController = StoryboardScene.UsersTableViewController.initialViewController()
-        usersViewController.userSelected = showDetail
+        usersViewController.userSelected = showUserDetail
         navigationController.pushViewController(usersViewController, animated: false)
-    }
-
-    private func showDetail(of user: User) {
-        let detailViewController = StoryboardScene.UserDetailViewController.initialViewController()
-        detailViewController.user = user
-        navigationController.pushViewController(detailViewController, animated: true)
     }
 }
