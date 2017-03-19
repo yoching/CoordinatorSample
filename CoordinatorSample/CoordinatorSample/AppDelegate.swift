@@ -20,20 +20,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         window = UIWindow(frame: UIScreen.main.bounds)
 
-        let feedNavigationController = UINavigationController()
-        feedNavigationController.title = "feed"
-
-        let searchNavigationController = UINavigationController()
-        searchNavigationController.title = "search"
-        let feedCoordinator = FeedCoordinator(presenter: feedNavigationController)
-        let searchCoordinator = SearchCoordinator(presenter: searchNavigationController)
+        let itemsCoordinator = ItemsCoordinator(
+            presenter: UINavigationController()
+        )
+        let usersCoordinator = UsersCoordinator(
+            presenter: UINavigationController()
+        )
 
         let mainTabCoordinator = MainTabCoordinator(
             presenter: UITabBarController(),
-            childCoordinators: [feedCoordinator, searchCoordinator]
+            childCoordinators: [itemsCoordinator, usersCoordinator]
         )
 
-        appCoordinator = AppCoordinator(window: window!, rootCoordinator: mainTabCoordinator)
+        appCoordinator = AppCoordinator(
+            window: window!,
+            rootCoordinator: mainTabCoordinator
+        )
 
         appCoordinator?.start()
         return true
