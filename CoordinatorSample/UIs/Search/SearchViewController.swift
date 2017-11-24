@@ -10,7 +10,7 @@ import UIKit
 
 final class SearchViewController: UIViewController {
 
-    var searchTapped: ((Void) -> Void)?
+    var searchTapped: (() -> Void)?
 
     @IBAction func searchButtonTapped(_ sender: Any) {
         searchTapped?()

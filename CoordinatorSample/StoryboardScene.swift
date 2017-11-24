@@ -3,9 +3,7 @@
 import Foundation
 import UIKit
 
-// swiftlint:disable file_length
 // swiftlint:disable line_length
-// swiftlint:disable type_body_length
 
 protocol StoryboardSceneType {
   static var storyboardName: String { get }
